@@ -80,9 +80,3 @@ class TodoCompleteUpdateView(generics.UpdateAPIView):
 		serializer.instance.datecompleted = timezone.now()
 		serializer.save()
 
-
-
-#$ curl -X "POST" http://localhost:8000/api/signup -H 'Content-Type: application/json' -d '{"username":"admin2","password":"password123"}'
-#$ curl http://localhost:8000/api/todos -H 'Authorization: Token 331c84a3e09573363024d4923f36a0988c576ca0'
-#$ curl -X "POST" http://localhost:8000/api/login -H 'Content-Type: application/json' -d '{"username":"admin2","password":"password123"}'
-# admin - "2b54107698d96500e03a941668353287079e79ab"
